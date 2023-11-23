@@ -1,0 +1,25 @@
+AMDANI sample.h
+AMDANI math.h
+
+START PURNO kapca ( PURNO p, VOGNO q)
+    p=5;
+    RETURN 1;
+END
+
+START PURNO func ( PURNO p, VOGNO q)
+    PURNO ans;
+    RETURN ans;
+END
+
+START PURNO func2 ()
+    RETURN a;
+END
+
+
+STARTMAIN
+    PURNO a;
+    PURNO a = 5;
+    PURNO b = 5 , c,d,e;
+    PURNO upo = 5 JOG 6 , uno = b GUNN 8 , zuo = b BHAGGSHES a;
+ENDMAIN
+

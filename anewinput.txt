@@ -1,0 +1,111 @@
+AMDANI sample.h
+AMDANI math.h
+
+NOTE This is a single-line comment
+
+START PURNO max(PURNO ta, PURNO tb)
+    JODI (ta HOCCHECHOTO tb);
+    {
+        RETURN ta;
+    }
+    JODINA (tb HOCCHECHOTO ta);
+    {
+        RETURN tb;
+    }
+    NAHOLE
+    {
+        RETURN ta; 
+    }
+END
+
+START PURNO max(PURNO ta, PURNO tb)
+    DEKHAW "HELLO";
+END
+
+STARTMAIN 
+
+    PURNO a = 6;
+    PURNO b = 3;
+    PURNO summation = a JOG b ;
+    DEKHAW "Hello" JOG summation;
+
+    PURNO x = 10;
+    PURNO y = 20;
+    PURNO radius = 5.0;
+    PURNO maxResult;
+    DEKHAW "x: " JOG x;
+    DEKHAW "y: " JOG y;
+    DEKHAW "radius: " JOG radius;
+    DEKHAW "message: " JOG message;
+
+    DEKHAW "Maximum of x and y: " JOG maxResult;
+
+
+    JODI (summation HOCCHEBORO 10); {
+        DEKHAW "Sum is greater than 10";
+    }
+    JODINA (summation HOCCHEBORO 5) ; {
+        DEKHAW "Sum is greater than 5";
+
+        JODI (a HOCCHEBORO 5); {
+            DEKHAW "a is greater than 5";
+        }
+        NAHOLE {
+            DEKHAW "a is less than 5";
+        }
+        GHURO i = 0; i HOCCHECHOTO 5; i = i JOG 1; {
+            DEKHAW "Iteration: " JOG i;
+        }
+        JOTOKHON index HOCCHEBORO 0 ; {
+            DEKHAW "Index is " JOG index;
+            index = index JOG 1;
+        }
+
+        OBOSSHOIKORO{
+            DEKHAW "This is greater";
+        } JOTOKHON index HOCCHEBORO 0 ;
+    }
+    NAHOLE {
+        DEKHAW "Sum is less than 5";
+
+        GHURO i = 1; i HOCCHEBORO 5; i = i JOG 1;
+        {
+            DEKHAW "Iteration: " JOG i;
+        }
+
+        PURNO j = 5;
+        PURNO f = 1;
+        PURNO product = 1;
+        JOTOKHON j HOCCHEBORO 1 ;
+        {
+            product = product JOG j;
+            j = j BIYOG 1;
+        }
+    }
+    LAFAW a GUNN 10 ; {
+        KOKHONO 10 :
+            DEKHAW "greater then 0";
+            VANGO;
+        KOKHONO 20 :
+            DEKHAW "less then -1";
+            CHOLO;
+        NORMALLY :
+            DEKHAW "is 0";        
+            VANGO;
+    }
+    PURNO talha;
+    talha = hamlot ( a );
+    PURNO talha2;
+    talha2 = a JOG b;
+    talha2 = 5;
+    talha3 = 4 ;
+    PURNO talha4;
+    FACT( 5 ); 
+    LEAPYEAR (2000);
+    SQRT (9);
+    GCD (6 , 3);
+    LCM ( 4, 6);
+    MAX (a , talha2);
+
+ENDMAIN
+
