@@ -38,52 +38,6 @@
         varFunction[v] = 1;
     }
 
-    // vector<string> variable;
-    // vector<int> store;
-    // int last_point = 1, f = 1;
-    // int cdefault = 0, var = 0;
-    // vector<string> param;
-    // int cnt_func = 1;
-    // int conditionMatched;
-
-    // int func_present_or_not(const string& s) {
-    //     auto it = find(param.begin(), param.end(), s);
-    //     return (it != param.end());
-    // }
-
-    // int assign_func(const string& s) {
-    //     param.push_back(s);
-    //     cnt_func++;
-    //     return 1;
-    // }
-
-    // int isdeclared(const string& s) {
-    //     auto it = find(variable.begin(), variable.end(), s);
-    //     return (it != variable.end());
-    // }
-    
-    // int assign(const string& s) {
-    //     if (isdeclared(s) == 1)
-    //         return 0;
-    //     variable.push_back(s);
-    //     store.push_back(0);
-    //     last_point++;
-    //     return 1;
-    // }
-    // int setval(const string& s, int val) {
-    //     if (isdeclared(s) == 0)
-    //         return 0;
-    //     auto it = find(variable.begin(), variable.end(), s);
-    //     int ok = distance(variable.begin(), it);
-    //     store[ok] = val;
-    //     return 1;
-    // }
-
-    // int getval(const string& s) {
-    //     auto it = find(variable.begin(), variable.end(), s);
-    //     return (it != variable.end()) ? distance(variable.begin(), it) : -1;
-    // }
-
 %}
 
 %token STARTMAIN ENDMAIN HEADER JOG BIYOG GUNN BHAGG OBOSSHOIKORO LAFAW KOKHONO VANGO NORMALLY BHAGGSHES SUCHOK BARBEI KOMBEI POROMMAN SHARI NOT AND OR ANDAND OROR LESS GREATER EQ LEQ GEQ NEQ JOTOKHON GHURO JODI NAHOLE JODINA TOBE DEKHAW LIKHO LPAREN RPAREN LFIRST RFIRST AINDEX LBRACE RBRACE ASSIGN SEMICOLON COMMA STARTOFFUNCTION ENDOFFUNCTION RETURN SURU CHOLO FACT LEAPYEAR SQRT GCD LCM MAX MIN PRIME RANGE FROM

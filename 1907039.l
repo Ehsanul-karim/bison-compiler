@@ -118,8 +118,6 @@ OPERATION ({ID}[ ]*=[ ]*{IDORNUMBER}([ ]*{OPERATOR}[ ]*{IDORNUMBER}[ ]*)*)|{UNAR
 ")" {return RFIRST;}
 
 "\<{WHOLENUMBER}\>" { return WHOLENUMBER; }
-"NOTE"(.)*"\n" { printf("comments found\n"); /* ignore comments */ }
-"NOTE"[\*](.*|\n)*[\*]"NOTE" { printf("comments found\n"); }
 {ID} {  
 	//printf("variable %s",yytext);
 	yylval.varType = strdup(yytext); 
@@ -145,6 +143,8 @@ OPERATION ({ID}[ ]*=[ ]*{IDORNUMBER}([ ]*{OPERATOR}[ ]*{IDORNUMBER}[ ]*)*)|{UNAR
 "," { return COMMA; }
 [ ] {}
 [:] {return SURU; }
+"NOTE"(.)*"\n" { printf("comments found\n"); /* ignore comments */ }
+"NOTE"[\*](.*|\n)*[\*]"NOTE" { printf("comments found\n"); }
 . { printf("INVALID_CHARACTER: %s\n", yytext); }
 
 %%
